@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import './style.css';
+import './styles.css';
 import phoneImg from '../../assets/phone.png';
 import wppImg from '../../assets/wpp.png';
 import logoImg from '../../assets/logo.png';
