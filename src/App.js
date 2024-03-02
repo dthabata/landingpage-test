@@ -1,7 +1,9 @@
-import './App.css';
+// import './App.css';
 import Header from './components/Header'; 
 import Home from './components/Home';
 import Plans from './components/Plans';
+import Coverage from './components/Coverage';
+import Accordion from './components/Accordion';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Header/>
       <Home />
       <Plans />
+      <Coverage />
+      <Accordion />
     </div>
   );
 }
