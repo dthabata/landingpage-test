@@ -5,7 +5,6 @@ import Plans from './components/Plans';
 import Coverage from './components/Coverage';
 import Accordion from './components/Accordion';
 import Footer from './components/Footer';
-import Mobile from './components/Mobile';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <Coverage />
       <Accordion />
       <Footer />
-      <Mobile />
     </div>
   );
 }
