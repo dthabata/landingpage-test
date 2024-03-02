@@ -39,15 +39,6 @@ header {
     padding: 10px;
 }
 
-.logo-row {
-    background-color: #006e3e;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-}
-
 .logo {
     max-width: 150px;
     height: auto;
@@ -69,7 +60,8 @@ header {
     gap: 12px;
 }
 
-.button-header, .button-header-right {
+.button-header,
+.button-header-right {
     box-sizing: border-box;
     padding: 8px 15px;
     color: #fff;
@@ -84,7 +76,8 @@ header {
     margin-left: 60px;
 }
 
-.button-header:hover, .button-header-right:hover {
+.button-header:hover,
+.button-header-right:hover {
     padding: 7px 14px;
     border: 1px solid #ffd012;
     border-radius: 8px;
