@@ -1,0 +1,91 @@
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.header-text {
+    background-color: #03341c;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    .img {
+        max-height: 2px;
+    }
+
+    p {
+        color: #ffb31a;
+    }
+}
+
+.header-text p:first-child {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.desktop-elements {
+    display: block;
+}
+
+.logo-row {
+    background-color: #006e3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.logo-row {
+    background-color: #006e3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.buttons a:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.button-header, .button-header-right {
+    box-sizing: border-box;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    outline: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: outline 0.3s ease-in-out;
+}
+
+.button-header-right {
+    margin-left: 60px;
+}
+
+.button-header:hover, .button-header-right:hover {
+    padding: 7px 14px;
+    border: 1px solid #ffd012;
+    border-radius: 8px;
+}
