@@ -18,7 +18,11 @@ return (
                 <img src={phoneImg} alt="Phone" className="phone"/>
                 <p>(31) 4000-1667</p>
                 <img src={wppImg}  alt="WhatsApp" className="wpp"/>
-                <p>(31) 2534-2115</p>
+                <p>
+                    <a href="https://wa.me/553125342115" target='_black'>
+                    (31) 2534-2115
+                    </a>
+                </p>
             </div>
 
             <div className="desktop-elements">

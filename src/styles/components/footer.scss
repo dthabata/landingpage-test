@@ -215,6 +215,16 @@
     }
 }
 
+.fadeOut-footer {
+    opacity:0;
+    display: none;
+}
+
+.fadeIn-footer {
+    opacity:1;
+    display: block;
+}
+
 @include mixins.between-devices("tiny-phone", "tablet") { 
     .baseboard {
         font-family: variables.$secondary-font-family;

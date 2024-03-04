@@ -19,8 +19,9 @@ header {
         max-height: 2px;
     }
 
-    p {
+    p, a {
         color: variables.$text-color-yellow;
+        text-decoration: none;
     }
 }
 

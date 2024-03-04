@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/components/footer.scss';
 import contactImg from '../../assets/contact.png';
 import wppImg from '../../assets/wpp.png';
@@ -26,6 +26,21 @@ import pixImg from '../../assets/pix.png';
 import bitmapImg from '../../assets/bitmap.png';
 
 const Footer = () => {
+    /*
+        A implementação abaixo é apenas conceitual. Acredito que a forma mais adequada para este caso seria entender o que deveria de fato conter no Accordion, 
+        para entender se o array ficaria fixo ou se viria do servidor. Ainda, se cada elemento do Accordian fosse completamente diferente um do outro (o que imagino que seria o caso), 
+        faria-se necessario desenvolver uma estrutura de HTML para cada um deles separadamente.
+    */
+
+    const [faqAccordiondShowList, setFaqAccordiondShowList] = useState([false, false, false, false]);
+    
+    const toggleAccordion = (index) => {
+        const faqAccordiondShowListAux = [...faqAccordiondShowList];
+        faqAccordiondShowListAux[index] = !faqAccordiondShowListAux[index];
+        setFaqAccordiondShowList(faqAccordiondShowListAux);
+    }
+    
+
 return (
         <>
             <section className="footer-chunk">
@@ -41,7 +56,7 @@ return (
                                 <img src={contactImg} alt="Contact" className="contact" /><span>(99) 99999.9999</span>
                             </div>
                             <div className="column button-contact">
-                                <a href="#" className="button-wpp"><img src={wppImg} alt="WhatsApp" className="wpp" />Se preferir, entre em contato pelo Whatsapp</a>
+                                <a href="https://wa.me/553125342115" target='_black' className="button-wpp"><img src={wppImg} alt="WhatsApp" className="wpp" />Se preferir, entre em contato pelo Whatsapp</a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +98,7 @@ return (
                     <div className="baseboard">
                         <p>CENTRAL DE VENDAS:</p>
                         <div className="column button-contact">
-                            <a href="#" className="button-wpp"><img src={wppImg} alt="WhatsApp" className="wpp" />(31) 4007-2586</a>
+                            <a href="https://wa.me/553140072586" target='_black' className="button-wpp"><img src={wppImg} alt="WhatsApp" className="wpp" />(31) 4007-2586</a>
                             <a href="#" className="button-wpp"><img src={mobileImg} alt="Mobile" className="phone-mobile" />(31) 98204-2542</a>
                         </div>
                     </div>
@@ -97,11 +112,12 @@ return (
                         <div className="accordion-content-footer">
                             <div className="accordion-footer">
                                 <div className="section-footer">
-                                    <div className="trigger-footer">
+                                    <div className="trigger-footer" onClick={() => toggleAccordion(0)}>
                                         Seguros
                                         <div className="arrow-accordion-footer"></div>
                                     </div>
-                                    <div className="content">
+                                    
+                                    <div className={`content-footer ${faqAccordiondShowList[0] ? 'fadeIn-footer':'fadeOut-footer'}`}>
                                         <p>Seguro Viagem América do Norte</p>
                                         <p>Seguro Viagem Europa</p>
                                         <p>Seguro Viagem América do Sul</p>
@@ -117,29 +133,29 @@ return (
                                     </div>
                                 </div>
                                 <div className="section-footer">
-                                    <div className="trigger-footer">
+                                    <div className="trigger-footer" onClick={() => toggleAccordion(1)}>
                                         Quem somos
                                         <div className="arrow-accordion-footer"></div>
                                     </div>
-                                    <div className="content">
+                                    <div className={`content-footer ${faqAccordiondShowList[1] ? 'fadeIn-footer':'fadeOut-footer'}`}>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
                                     </div>
                                 </div>
                                 <div className="section-footer">
-                                    <div className="trigger-footer">
+                                    <div className="trigger-footer" onClick={() => toggleAccordion(2)}>
                                         Seguradoras
                                         <div className="arrow-accordion-footer"></div>
                                     </div>
-                                    <div className="content">
+                                    <div className={`content-footer ${faqAccordiondShowList[2] ? 'fadeIn-footer':'fadeOut-footer'}`}>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
                                     </div>
                                 </div>
                                 <div className="section-footer">
-                                    <div className="trigger-footer">
+                                    <div className="trigger-footer" onClick={() => toggleAccordion(3)}>
                                         Blog
                                         <div className="arrow-accordion-footer"></div>
                                     </div>
-                                    <div className="content">
+                                    <div className={`content-footer ${faqAccordiondShowList[3] ? 'fadeIn-footer':'fadeOut-footer'}`}>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
                                     </div>
                                 </div>
