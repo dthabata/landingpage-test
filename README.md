@@ -37,6 +37,6 @@ Alguns comentários foram deixados de propósito para a leitura do avaliador do 
 
 #### 💻 Vídeos do projeto desenvolvido
 
----
+// Adicionar aqui
 
-feito por @[dornelasthabata](https://github.com/dthabata) 😊
+-- feito por @[dornelasthabata](https://github.com/dthabata) 😊
