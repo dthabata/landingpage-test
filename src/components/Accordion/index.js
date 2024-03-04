@@ -37,6 +37,11 @@ const Accordion = () => {
 
 return (
         <section className="accordion-chunk">
+            <div className="mobile-elements">
+                <div className="column image-column">
+                    <img src={coupleImg} alt="Couple" className="couple" />
+                </div>
+            </div>
             <div className="column content-column">
                 <h2 className="accordion-title">Mas por que ter um seguro de vida?</h2>
             </div>
@@ -46,24 +51,22 @@ return (
                     {
                         reasonsList.map((item, index) => (
                             <div key={item.value.id} className="section">
-                                <div className="trigger" onClick={() => toggleAccordion(item.value.id)}>
+                                <div className="accordion-title trigger" onClick={() => toggleAccordion(item.value.id)}>
                                     {item.value.title}
                                     <div className="arrow-accordion"></div>
                                 </div>
                                 <div className={item.show ? 'fadeIn':'fadeOut'}>
-                                    <p>{item.value.content}</p>
+                                    <p className="accordion-item">{item.value.content}</p>
                                 </div>
                             </div>
                         ))
                     }
                     </div>
                 </div>
-                <div className="desktop-elements">
-                    <div className="image-content">
+                <div className="desktop-elements image-content">
                         <div className="column image-column">
                             <img src={coupleImg} alt="Couple" className="couple" />
                         </div>
-                    </div>
                 </div>
             </div>
             <div className="column button-column">

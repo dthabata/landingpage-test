@@ -25,7 +25,7 @@ Clone o projeto em sua máquina e rode `npm install` para instalar as dependênc
 #### 🛠️ Como foi construído
 
 - HTML/CSS;
-- O React foi utilizado por meio de componentes funcionais e também usei `hooks`, tais como hooks como `useState` e `useEffect`;
+- O React foi utilizado no projeto por meio de componentes funcionais, com arrow functions, e também usei `hooks`, tais como hooks como `useState` e `useEffect`;
 - Houve a aplicação de SASS como sugerido;
 - A chamada de API foi feita na mão por fetch, para seguir recomendação de utilizar o mínimo possível de libs, uma vez que em outra situação geralmente teria feito a escolha de uso de `axios`, por exemplo;
 - A adaptação mobile foi feita, mas se com mais tempo disponível, teria sido aprimorada em ajustes mais finos;

@@ -13,8 +13,9 @@ function App() {
       <Home />
       <Plans />
       <Coverage />
-      <Accordion />
-      <Footer /> 
+       <Accordion /> 
+       {/*
+       <Footer /> */}
     </div>
   );
 }

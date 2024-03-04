@@ -65,7 +65,6 @@ section {
     padding: 10px 25px;
     border-radius: 20px;
     display: inline-block;
-    margin-bottom: 30px;
 }
 
 .button-cta-primary {
@@ -73,6 +72,7 @@ section {
     align-items: center;
     justify-content: center;
     max-width: fit-content;
+    margin-bottom: 30px;
 }
 
 @include mixins.between-devices("tiny-phone", "tablet") { 
@@ -85,11 +85,11 @@ section {
     }
     
     .top-page {
-        font-size: variables.$regular-font-size !important;
+        font-size: 28px !important;
     }
     
     .bottom-page {
-        font-size: variables.$medium-font-size !important;
+        font-size: 16px !important;
         margin-bottom: -50px !important;
     
         p {

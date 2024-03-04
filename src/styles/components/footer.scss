@@ -151,18 +151,17 @@
     }
 }
 
-.accordion-content {
+.accordion-content-footer {
     flex: 1;
-    padding: 10px;
     margin-right: 10px;
 }
 
-.accordion {
+.accordion-footer {
     width: 400px;
     margin: 40px auto;
 }
 
-.section {
+.section-footer {
     font-size: variables.$medium-font-size;
     border-bottom: 1px solid variables.$primary-color-light-gray;
     text-align: left;
@@ -183,7 +182,7 @@
     transition: max-height 0.3s ease-out;
 }
 
-.arrow-accordion {
+.arrow-accordion-footer {
     width: 6px;
     height: 6px;
     border-left: 2px solid variables.$button-main-color-green;
@@ -192,7 +191,7 @@
     transition: transform 0.3s ease-out;
 }
 
-.section.open .arrow-accordion {
+.section-footer.open .arrow-accordion-footer {
     transform: rotate(135deg);
 }
 
@@ -255,7 +254,7 @@
             }
         }
 
-        .accordion-content, .accordion {
+        .accordion-content-footer, .accordion-footer {
             margin-top: 5px;
             width: 95%;
             background-color: variables.$tertiary-color-white;
@@ -281,11 +280,11 @@
             transition: transform 0.3s ease-out;
         }
 
-        .section {
+        .section-footer {
             border-bottom: 1px solid variables.$text-secondary-color-gray;
         }
         
-        .section:first-child {
+        .section-footer:first-child {
             border-top: 1px solid variables.$text-secondary-color-gray;
         }
     }
@@ -420,7 +419,7 @@
     }
 }
 
-@include mixins.between-devices("desktop", "large-desktop") { 
+@include mixins.only-device("desktop") { 
     .lp-footer {
         flex-direction: column;
     }
