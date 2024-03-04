@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Projeto Teste Amo Promo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi feito com o intuito de atender aos requisitos do ![Teste Pessoa Desenvolvedora Web Amo Promo V1.0](https://gist.github.com/vitorfavila/1d49f3f43ad97068b601dd75488c49cd)!
 
-## Available Scripts
+## 🚀 Para começar
 
-In the project directory, you can run:
+Clone o projeto em sua máquina e rode `npm install` para instalar as dependências do projeto. Isso feito, basta dar `npm start` para ver a landing page em sua tela!
 
-### `npm start`
+### 📋 Pré-requisitos do teste
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Implementar uma Landin Page utilizando HTML, CSS e se necessário Javascript com base no Figma compartilhado;
+- Melhores práticas de código, limpo, semântico, fácil de ler;
+- Além de HTML e CSS, utilize Javascript puro ou React;
+- Usar o mínimo possível de libs de terceiros;
+- Não utilizar framework CSS;
+- Carregar dados da section de Accordion com base no endpoint enviado;
+- Disponibilizar link do repositório do projeto ao fim do mesmo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🖇️ Diferenciais
 
-### `npm test`
+- Uso do React;
+- Layout adaptativo para mobile;
+- Uso do SASS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Como foi construído
 
-### `npm run build`
+- HTML/CSS;
+- O React foi utilizado por meio de componentes funcionais no projeto e fez uso de `hooks`, tais como hooks como `useState` e `useEffect`;
+- Houve a aplicação de SASS como sugerido;
+- A chamada de API foi feita na mão por fetch, para seguir recomendação de utilizar o mínimo possível de libs, uma vez que em outra situação geralmente teria feito a escolha de uso de `axios`, por exemplo;
+- A adaptação mobile foi feita, mas se com mais tempo disponível, teria sido aprimorada em ajustes mais finos;
+- Não foi utilizada nenhum framework CSS além do que era mínimo necessário para rodar SASS;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✒️ Observação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Alguns comentários foram deixados de propósito para a leitura do avaliador do teste, com referências de sites que foram utilizados em pesquisa para o desenvolvimento da landing page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📄 Algumas imagens do projeto desenvolvido, em sua versão de envio final
 
-### `npm run eject`
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+⌨️ feito por [@dornelasthabata](https://github.com/dthabata) 😊
