@@ -1,9 +1,10 @@
 @use '../mixins.scss' as mixins;
+@use '../variables.scss' as variables;
 
 .footer-web {
     position: relative;
     background-image: url('../../assets/woman.png');
-    background-color: #cccccc;
+    background-color: variables.$background-color;
     min-height: 612px;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +18,7 @@
 .footer-mobile {
     position: relative;
     background-image: url('../../assets/wallpaper.png');
-    background-color: #cccccc;
+    background-color: variables.$background-color;
     min-height: 612px;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,18 +38,18 @@
 }
 
 .footer-title {
-    color: #3b454f;
-    font-size: 24px;
+    color: variables.$text-main-color-gray;
+    font-size: variables.$regular-font-size;
     margin-right: 100px;
 }
 
 .footer-content {
-    color: #3b454f;
+    color: variables.$text-main-color-gray;
     margin-top: 30px;
 
     p {
         font-weight: 700;
-        color: #3b454f;
+        color: variables.$text-main-color-gray;
     }
 }
 .button-contact {
@@ -75,8 +76,8 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #33794a;
-    color: #fff;
+    background-color: variables.$button-main-medium-green;
+    color: variables.$tertiary-color-white;
     font-weight: 300;
     border: none;
     border-radius: 20px;
@@ -88,7 +89,7 @@
 
 .footer-info {
     font-weight: 300;
-    color: #3b454f;
+    color: variables.$text-main-color-gray;
     text-align: right;
     margin-right: 20px;
 }
@@ -97,7 +98,7 @@
     position: relative;
     width: 100%;
     height: 74px;
-    background-color: #fff;
+    background-color: variables.$tertiary-color-white;
 }
 
 .colorful-line {
@@ -107,14 +108,14 @@
     width: 100%;
     height: 2px;
     background: linear-gradient(to right, 
-    #64BA00 0%, 
-    #64BA00 25%, 
-    #68629C 25%, 
-    #68629C 50%, 
-    #FFD012 50%, 
-    #FFD012 75%, 
-    #007E47 75%, 
-    #007E47 100%
+    variables.$linear-light-green 0%, 
+    variables.$linear-light-green 25%, 
+    variables.$linear-purple 25%, 
+    variables.$linear-purple 50%, 
+    variables.$linear-yellow 50%, 
+    variables.$linear-yellow 75%, 
+    variables.$linear-green 75%, 
+    variables.$linear-green 100%
     );
 }
 
@@ -144,7 +145,7 @@
     }
 
     p {
-        color: #435162;
+        color: variables.$text-secondary-color-gray;
         text-align: left;
         margin-left: 20px;
     }
@@ -162,8 +163,9 @@
 }
 
 .section {
-    font-size: 16px;
-    border-bottom: 1px solid #ccc;
+    font-size: variables.$medium-font-size;
+    border-bottom: 1px solid variables.$primary-color-light-gray;
+    text-align: left;
 }
 
 .trigger {
@@ -172,7 +174,7 @@
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    background-color: #f4f4f4;
+    background-color: variables.$secondary-color-light-gray;
 }
 
 .content {
@@ -184,8 +186,8 @@
 .arrow-accordion {
     width: 6px;
     height: 6px;
-    border-left: 2px solid #60c742;
-    border-bottom: 2px solid #60c742;
+    border-left: 2px solid variables.$button-main-color-green;
+    border-bottom: 2px solid variables.$button-main-color-green;
     transform: rotate(-45deg);
     transition: transform 0.3s ease-out;
 }
@@ -195,8 +197,8 @@
 }
 
 .logo-row-mobile {
-    background-color: #006e3e;
-    color: #fff;
+    background-color: variables.$button-color-strong-green;
+    color: variables.$tertiary-color-white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -214,15 +216,12 @@
     }
 }
 
-
-
 @include mixins.between-devices("tiny-phone", "tablet") { 
-    
     .baseboard {
-        font-family: 'Open Sans', sans-serif;
+        font-family: variables.$secondary-font-family;
         font-weight: 600;
         margin-bottom: -20px;
-        background-color: #fff;
+        background-color: variables.$tertiary-color-white;
 
         .button-contact {
             display: flex;
@@ -232,10 +231,10 @@
         }
 
         .button-wpp {
-            font-family: 'Open Sans', sans-serif;
+            font-family: variables.$secondary-font-family;
             font-weight: 600;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: variables.$medium-font-size;
             width: 85%;
             display: flex;
             flex-direction: row;
@@ -259,13 +258,13 @@
         .accordion-content, .accordion {
             margin-top: 5px;
             width: 95%;
-            background-color: #fff;
+            background-color: variables.$tertiary-color-white;
         }
 
         .trigger, .content {
-            color: #435162;
-            background-color: #fff;
-            font-family: 'Open Sans', sans-serif;
+            color: variables.$text-secondary-color-gray;
+            background-color: variables.$tertiary-color-white;
+            font-family: variables.$secondary-font-family;
             font-weight: 600;
         }
 
@@ -276,34 +275,34 @@
         .arrow-accordion {
             width: 6px;
             height: 6px;
-            border-left: 2px solid #435162;
-            border-bottom: 2px solid #435162;
+            border-left: 2px solid variables.$text-secondary-color-gray;
+            border-bottom: 2px solid variables.$text-secondary-color-gray;
             transform: rotate(-45deg);
             transition: transform 0.3s ease-out;
         }
 
         .section {
-            border-bottom: 1px solid #435162;
+            border-bottom: 1px solid variables.$text-secondary-color-gray;
         }
         
         .section:first-child {
-            border-top: 1px solid #435162;
+            border-top: 1px solid variables.$text-secondary-color-gray;
         }
     }
 
     .payments {
-        font-family: 'Open Sans', sans-serif;
+        font-family: variables.$secondary-font-family;
         display: flex;
         flex-direction: column;
         text-align: left;
         justify-content: center;
-        background-color: #fff;
+        background-color: variables.$tertiary-color-white;
         gap: 0;
 
         h3, p {
             padding-left: 20px;
             margin-bottom: -10px;
-            color: #435162;
+            color: variables.$text-secondary-color-gray;
         }
 
         h3 {
@@ -357,10 +356,10 @@
         }
 
         .mobile-memo {
-            font-family: 'Open Sans', sans-serif;
+            font-family: variables.$secondary-font-family;
             display: flex;
             flex-direction: column;
-            text-align: left;
+            text-align: center;
             justify-content: center;
 
             p {
@@ -385,23 +384,23 @@
         }
 
         .footer-content p {
-            font-size: 12px;
+            font-size: variables.$tiny-font-size;
             font-weight: 300;
-            color: #737d86;
+            color: variables.$text-tertiary-color-gray;
             margin-bottom: 0px;
         }
 
         .footer-content span {
-            font-size: 14px;
+            font-size: variables.$small-font-size;
             font-weight: 700;
-            color: #83af38;
+            color: variables.$button-secondary-color-green;
             margin-bottom: 0px;
         }
 
         .add-info {
-            font-size: 10px;
+            font-size: variables.$extra-small-font-size;
             font-weight: 300;
-            color: #3b454f;
+            color: variables.$text-main-color-gray;
         }
 
         .button-contact {
@@ -414,7 +413,7 @@
         }
 
         .button-wpp {
-            font-size: 12px;
+            font-size: variables.$tiny-font-size;
             margin-top: 340px;
             margin-right: 105px;
         }

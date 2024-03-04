@@ -1,4 +1,5 @@
 @use '../mixins.scss' as mixins;
+@use '../variables.scss' as variables;
 
 .coverage-chunk {
     display: flex;
@@ -19,17 +20,15 @@
     justify-content: center;
     padding: 40px;
     text-align: center;
-    max-width: 328px;
-    background-color: #fff;
+    background-color: variables.$tertiary-color-white;
     border: none; 
     border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 4px 6px variables.$primary-shadow-color;
     margin-bottom: 40px;
 }
 
 .card button {
-    background-color: #3498db;
-    color: #fff;
+    color: variables.$tertiary-color-white;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -40,9 +39,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    margin-left: 20px;
-    margin-right: 20px;
+    gap: 20px;
+    padding: 5px;
+    max-width: fit-content;
 }
 
 .computer {
@@ -54,9 +53,9 @@
 }
 
 .card h3 {
-    color: #33794a;
+    color: variables.$button-color-dark-green;
     font-weight: 700;
-    font-size: 16px;
+    font-size: variables.$medium-font-size;
 }
 
 .card p {
@@ -64,8 +63,8 @@
 }
 
 .button-card {
-    background-color: #60c742;
-    color: #33794a;
+    background-color: variables.$button-main-color-green;
+    color: variables.$button-main-medium-green;
     font-weight: 700;
     text-decoration: underline;
     cursor: pointer;
@@ -74,14 +73,12 @@
     display: inline-block;
 }
 
-
-
 @include mixins.between-devices("tiny-phone", "tablet") {
     .flex-container-cards {
         flex-direction: column;
         gap: 0px;
         margin-bottom: 30px;
-        font-size: 14px;
+        font-size: variables.$small-font-size;
 
         p {
             margin-top: 5px;
@@ -95,8 +92,4 @@
     .img {
         width: 20%;
     }
-}
-
-@include mixins.between-devices("desktop", "large-desktop") { 
-    
 }

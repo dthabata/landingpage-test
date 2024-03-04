@@ -1,17 +1,18 @@
 @use '../mixins.scss' as mixins;
+@use '../variables.scss' as variables;
 
 .mobile-elements {
   .mini-menu button {
       display: block;
       width: 100%;
       padding: 8px;
-      color: #fff;
-      background-color: #03341c;
+      color: variables.$tertiary-color-white;
+      background-color: variables.$button-color-dark-green;
       border: none;
       text-align: left;
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
-      font-family: 'Poppins', sans-serif;
+      font-family: variables.$main-font-family;
       font-weight: 400;
   }
 }

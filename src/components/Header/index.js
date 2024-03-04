@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../../styles/components/header.scss';
 import phoneImg from '../../assets/phone.png';
 import wppImg from '../../assets/wpp.png';
@@ -7,7 +7,6 @@ import logoImg from '../../assets/logo.png';
 import userImg from '../../assets/user.png';
 import arrowImg from '../../assets/arrow.png';
 import menuImg from '../../assets/menu.png';
-
 
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);

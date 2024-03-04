@@ -1,17 +1,14 @@
 @use '../mixins.scss' as mixins;
-
-
-
-
+@use '../variables.scss' as variables;
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: variables.$background-color-black;
+    color: variables.$tertiary-color-white;
 }
 
 .header-text {
-    background-color: #03341c;
-    font-size: 13px;
+    background-color: variables.$button-color-dark-green;
+    font-size: variables.$tiny-font-size;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,18 +20,18 @@ header {
     }
 
     p {
-        color: #ffb31a;
+        color: variables.$text-color-yellow;
     }
 }
 
 .header-text p:first-child {
     text-transform: uppercase;
-    color: #fff;
+    color: variables.$tertiary-color-white;
 }
 
 .logo-row {
-    background-color: #006e3e;
-    color: #fff;
+    background-color: variables.$button-color-strong-green;
+    color: variables.$tertiary-color-white;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -49,7 +46,7 @@ header {
 .buttons {
     display: flex;
     gap: 8px;
-    font-size: 16px;
+    font-size: variables.$small-font-size;
     font-weight: 600;
     padding: 20px;
 }
@@ -66,7 +63,7 @@ header {
 .button-header-right {
     box-sizing: border-box;
     padding: 8px 15px;
-    color: #fff;
+    color: variables.$tertiary-color-white;
     text-decoration: none;
     outline: 1px solid transparent;
     border-radius: 5px;
@@ -81,13 +78,13 @@ header {
 .button-header:hover,
 .button-header-right:hover {
     padding: 7px 14px;
-    border: 1px solid #ffd012;
+    border: 1px solid variables.$linear-yellow;
     border-radius: 8px;
 }
 
 .logo-row-mobile {
-    background-color: #006e3e;
-    color: #fff;
+    background-color: variables.$button-color-strong-green;
+    color: variables.$tertiary-color-white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,12 +92,10 @@ header {
     padding: 5px;
 }
 
-
 @include mixins.between-devices("tiny-phone", "tablet") { 
     .header-text{
         display: none;
     }
-
 
     .logo-row {
         flex-direction: column;
@@ -121,12 +116,6 @@ header {
     }
 }
 
-
-@include mixins.only-device("tablet") { 
-    
-    
-}
-
 @include mixins.between-devices("desktop", "large-desktop") { 
     .header-text {
         flex-direction: column;
@@ -140,6 +129,27 @@ header {
         .phone, .wpp {
             display: block;
             margin: 0 auto;
+        }
+    }
+}
+
+@include mixins.only-device("tablet") { 
+    .logo-row {
+        flex-direction: column;
+        text-align: center;
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            flex-direction: row;
+            gap: 2px;
+            align-items: center;
+
+            .button-header-right {
+                margin-left: 0;
+            }
         }
     }
 }

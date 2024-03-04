@@ -1,1 +1,44 @@
-$text-main-color-gray: #3b454f
+//color
+$text-main-color-gray: #3b454f;
+$text-secondary-color-gray: #435162;
+$text-tertiary-color-gray: #737d86;
+$background-color: #cccccc;
+$background-color-black: #333;
+$primary-color-light-gray:  #ccc;
+$secondary-color-light-gray: #f4f4f4;
+$tertiary-color-white: #fff;
+$button-main-color-green: #60c742;
+$button-secondary-color-green: #83af38;
+$button-main-medium-green: #33794a;
+$button-color-strong-green: #006e3e;
+$button-color-dark-green: #03341c;
+$text-color-yellow: #ffb31a;
+$primary-shadow-color: rgba(0, 0, 0, 0.20);
+
+// linear gradient colorful
+$linear-light-green: #64ba00;
+$linear-purple: #68629c;
+$linear-yellow: #ffd012; 
+$linear-green: #007e47;
+
+//linear gradient shadow
+$linear-shadow-primary: rgba(0, 0, 0, 0);
+$linear-shadow-secondary: rgba(255, 255, 255, 0);
+$linear-shadow-tertiary: rgba(255, 255, 255, 0.11);
+$linear-shadow-quaternary: rgba(255, 255, 255, 0.137);
+$linear-shadow-quinary: rgba(255, 255, 255, 0.247);
+$linear-shadow-senary: rgba(255, 255, 255, 0.322);
+$linear-shadow-septenary: rgba(255, 255, 255, 0.534);
+$linear-shadow-octonary: rgba(255, 255, 255, 0.733);
+
+//font-size
+$bigger-font-size: 36px;
+$regular-font-size: 24px;
+$medium-font-size: 16px;
+$small-font-size: 14px;
+$tiny-font-size: 12px;
+$extra-small-font-size: 10px;
+
+//font-family
+$main-font-family: 'Poppins', sans-serif;
+$secondary-font-family: 'Open Sans', sans-serif;

@@ -1,3 +1,6 @@
+@use '../mixins.scss' as mixins;
+@use '../variables.scss' as variables;
+
 .flex-container-items {
     display: flex;
     justify-content: space-between;
@@ -26,8 +29,8 @@
     h2 {
         text-align: center;
         font-weight: 700;
-        color: #3b454f;
-        font-size: 36px;
+        color: variables.$text-main-color-gray;
+        font-size: variables.$regular-font-size;
     }
 
     p {
@@ -49,21 +52,20 @@
 .items span,
 .footer-content span {
     font-weight: 700;
-    color: #83af38;
-    font-size: 26px;
+    color: variables.$button-secondary-color-green;
+    font-size: variables.$regular-font-size;
 }
 
 .items li:last-child {
     text-align: justify;
     font-weight: 700;
-    color: #83af38;
+    color: variables.$button-secondary-color-green;
 }
 
 .button-plans {
     display: block;
     padding: 10px;
-    background-color: #3498db;
-    color: #fff;
+    color: variables.$tertiary-color-white;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;

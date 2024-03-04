@@ -83,8 +83,8 @@ return (
                     <div className="baseboard">
                         <p>CENTRAL DE VENDAS:</p>
                         <div className="column button-contact">
-                            <a href="#" className="button-wpp"><img src={wppImg} alt="WhatsApp" className="wpp" /></a>
-                            <a href="#" className="button-wpp"><img src={mobileImg} alt="Mobile" className="phone-mobile" /></a>
+                            <a href="#" className="button-wpp"><img src={wppImg} alt="WhatsApp" className="wpp" />(31) 4007-2586</a>
+                            <a href="#" className="button-wpp"><img src={mobileImg} alt="Mobile" className="phone-mobile" />(31) 98204-2542</a>
                         </div>
                     </div>
                     <div className="baseboard">
