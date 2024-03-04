@@ -1,6 +1,6 @@
 ## Projeto Teste Amo Promo
 
-Este projeto foi feito com o intuito de atender aos requisitos do [Teste Pessoa Desenvolvedora Web Amo Promo V1.0](https://gist.github.com/vitorfavila/1d49f3f43ad97068b601dd75488c49cd)!
+Este projeto foi feito como [Teste Pessoa Desenvolvedora Web Amo Promo V1.0](https://gist.github.com/vitorfavila/1d49f3f43ad97068b601dd75488c49cd)!
 
 ### 🚀 Para começar
 
@@ -39,4 +39,4 @@ Alguns comentários foram deixados de propósito para a leitura do avaliador do 
 
 ---
 
-feito por @[@dornelasthabata](https://github.com/dthabata) 😊
+feito por @[dornelasthabata](https://github.com/dthabata) 😊
