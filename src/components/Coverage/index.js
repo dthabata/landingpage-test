@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import './styles.css';
+import '../../styles/components/coverage.scss';
 import angelImg from '../../assets/angel.png';
 import chairImg from '../../assets/chair.png';
 import candleImg from '../../assets/candle.png';

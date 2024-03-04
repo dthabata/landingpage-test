@@ -1,5 +1,6 @@
 
-/* default styles */
+@use '../mixins.scss' as mixins;
+
 section {
     text-align: center;
 }
@@ -68,4 +69,31 @@ section {
 
 .button-cta-primary {
     margin-left: 30px;
+}
+
+@include mixins.between-devices("phone", "tablet") { 
+    .home-chunk, .coverage-chunk, .accordion-chunk {
+        width: 100%;
+    }
+    
+    .lp-home {
+        margin-left: 20px !important;
+    }
+    
+    .top-page {
+        font-size: 28px !important;
+    }
+    
+    .bottom-page {
+        font-size: 16px !important;
+        margin-bottom: -50px !important;
+    
+        p {
+            margin-bottom: 280px !important;
+        }
+    }
+}
+
+@include mixins.between-devices("desktop", "large-desktop") { 
+    
 }

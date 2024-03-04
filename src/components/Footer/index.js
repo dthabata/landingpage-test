@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import './styles.css';
+import '../../styles/components/footer.scss';
 import contactImg from '../../assets/contact.png';
 import wppImg from '../../assets/wpp.png';
-import './styles.css';
 import brandImg from '../../assets/brand.png';
 import socialImg from '../../assets/social.png';
 import rectangleImg from '../../assets/rectangle.png';

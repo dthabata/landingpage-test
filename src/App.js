@@ -1,4 +1,4 @@
-// import './App.css';
+import './styles/componentes/app.scss';
 import Header from './components/Header'; 
 import Home from './components/Home';
 import Plans from './components/Plans';
@@ -14,7 +14,9 @@ function App() {
       <Plans />
       <Coverage />
       <Accordion />
-      <Footer />
+      {/*
+      <Footer /> 
+      */}
     </div>
   );
 }

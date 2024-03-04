@@ -1,3 +1,5 @@
+@use '../mixins.scss' as mixins;
+
 .coverage-chunk {
     display: flex;
     justify-content: space-between;
@@ -70,4 +72,31 @@
     padding: 10px 25px;
     border-radius: 20px;
     display: inline-block;
+}
+
+
+
+@include mixins.between-devices("phone", "tablet") {
+    .flex-container-cards {
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 30px;
+        font-size: 14px;
+
+        p {
+            margin-top: 5px;
+        }
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    .img {
+        width: 20%;
+    }
+}
+
+@include mixins.between-devices("desktop", "large-desktop") { 
+    
 }

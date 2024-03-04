@@ -1,3 +1,5 @@
+@use '../mixins.scss' as mixins;
+
 header {
     background-color: #333;
     color: #fff;
@@ -24,10 +26,6 @@ header {
 .header-text p:first-child {
     text-transform: uppercase;
     color: #fff;
-}
-
-.desktop-elements {
-    display: block;
 }
 
 .logo-row {
@@ -81,4 +79,52 @@ header {
     padding: 7px 14px;
     border: 1px solid #ffd012;
     border-radius: 8px;
+}
+
+.logo-row-mobile {
+    background-color: #006e3e;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+
+@include mixins.between-devices("phone", "tablet") { 
+    .logo-row {
+        flex-direction: column;
+        text-align: center;
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            flex-direction: column;
+            gap: 10px;
+
+            .button-header-right {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@include mixins.between-devices("desktop", "large-desktop") { 
+    .header-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+
+        p {
+            margin: 0;
+        }
+
+        .phone, .wpp {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }

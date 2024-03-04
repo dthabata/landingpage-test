@@ -70,11 +70,6 @@
     background-color: #f4f4f4;
 }
 
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
 
 .arrow-accordion {
     width: 6px;
@@ -87,4 +82,14 @@
 
 .section.open .arrow-accordion {
     transform: rotate(135deg);
+}
+
+.fadeOut{
+    opacity:0;
+    display: none;
+}
+
+.fadeIn{
+    opacity:1;
+    display: block;
 }

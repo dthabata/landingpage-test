@@ -1,74 +1,74 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import './styles.css';
+import React, { useState, useEffect } from 'react';
+import '../../styles/components/accordion.scss';
 import coupleImg from '../../assets/couple.png';
+import reasonService from '../../services/reasonService';
 
 const Accordion = () => {
+    const [reasonsList, setReasonsList] = useState([]);
+    
+    const toggleAccordion = (id) => {
+        const reasonsListAux = [...reasonsList];
+
+        reasonsListAux.forEach(function(part, index, theArray) {
+            if(reasonsListAux[index].value.id === id) {
+                reasonsListAux[index].show = !reasonsListAux[index].show;
+                return;
+            }
+        });
+
+        setReasonsList(reasonsListAux);
+    }
+
+    useEffect(() => {
+        async function fetchMyAPI() {
+            const response = await reasonService.load();
+            if (reasonsList.length === 0){
+                const reasonsListAux = []
+                response.forEach(reason => {
+                    reasonsListAux.push({value: reason, show: false });
+                });
+                console.log(reasonsListAux);
+                setReasonsList(reasonsListAux);
+            }
+        }
+    
+        fetchMyAPI()
+    })
+
 return (
-        <section class="accordion-chunk">
-            <div class="column content-column">
-                <h2 class="accordion-title">Mas por que ter um seguro de vida?</h2>
+        <section className="accordion-chunk">
+            <div className="column content-column">
+                <h2 className="accordion-title">Mas por que ter um seguro de vida?</h2>
             </div>
-            <div class="accordion-container">
-                <div class="accordion-content">
-                    <div class="accordion">
-                        <div class="section">
-                            <div class="trigger">
-                                Custo-benefício
-                                <div class="arrow-accordion"></div>
+            <div className="accordion-container">
+                <div className="accordion-content">
+                    <div className="accordion">
+                    {
+                        reasonsList.map((item, index) => (
+                            <div key={item.value.id} className="section">
+                                <div className="trigger" onClick={() => toggleAccordion(item.value.id)}>
+                                    {item.value.title}
+                                    <div className="arrow-accordion"></div>
+                                </div>
+                                <div className={item.show ? 'fadeIn':'fadeOut'}>
+                                    <p>{item.value.content}</p>
+                                </div>
                             </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="trigger">
-                                Segurança financeira
-                                <div class="arrow-accordion"></div>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="trigger">
-                                Proteção financeira aos dependentes e ao cônjuge
-                                <div class="arrow-accordion"></div>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="trigger">
-                                Tranquilidade para o segurado
-                                <div class="arrow-accordion"></div>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="trigger">
-                                Garantias nas horas em que você mais precisar
-                                <div class="arrow-accordion"></div>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
-                            </div>
-                        </div>
+                        ))
+                    }
                     </div>
                 </div>
-                <div class="desktop-elements">
-                    <div class="image-content">
-                        <div class="column image-column">
-                            <img src={coupleImg} alt="Couple" class="couple" />
+                <div className="desktop-elements">
+                    <div className="image-content">
+                        <div className="column image-column">
+                            <img src={coupleImg} alt="Couple" className="couple" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column button-column">
-                <a href="#" class="button-cta-accordion">Faça sua cotação</a>
+            <div className="column button-column">
+                <a href="#" className="button-cta-accordion">Faça sua cotação</a>
             </div>
         </section>
     );

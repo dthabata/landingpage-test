@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import './styles.css';
+import '../../styles/components/plans.scss';
 import computerImg from '../../assets/computer.png';
 
 const Plans = () => {

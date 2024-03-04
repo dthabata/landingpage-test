@@ -1,0 +1,35 @@
+@use '../mixins.scss' as mixins;
+
+.mobile-elements {
+  .mini-menu button {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      color: #fff;
+      background-color: #03341c;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+  }
+}
+
+@include mixins.between-devices("phone", "tablet") {
+  .desktop-elements {
+    display:none !important;
+  }
+  .mobile-elements {
+    display: block !important;
+  }
+}
+
+@include mixins.between-devices("desktop", "large-desktop") { 
+  .desktop-elements {
+    display:block !important;
+  }
+  .mobile-elements {
+    display: none !important;
+  }
+}
