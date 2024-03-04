@@ -116,28 +116,28 @@ return (
                                         <p>Seguro de Vida</p>
                                     </div>
                                 </div>
-                                <div className="section">
-                                    <div className="trigger">
+                                <div className="section-footer">
+                                    <div className="trigger-footer">
                                         Quem somos
-                                        <div className="arrow-accordion"></div>
+                                        <div className="arrow-accordion-footer"></div>
                                     </div>
                                     <div className="content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
                                     </div>
                                 </div>
-                                <div className="section">
-                                    <div className="trigger">
+                                <div className="section-footer">
+                                    <div className="trigger-footer">
                                         Seguradoras
-                                        <div className="arrow-accordion"></div>
+                                        <div className="arrow-accordion-footer"></div>
                                     </div>
                                     <div className="content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>
                                     </div>
                                 </div>
-                                <div className="section">
-                                    <div className="trigger">
+                                <div className="section-footer">
+                                    <div className="trigger-footer">
                                         Blog
-                                        <div className="arrow-accordion"></div>
+                                        <div className="arrow-accordion-footer"></div>
                                     </div>
                                     <div className="content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin luctus malesuada. Curabitur vestibulum sagittis iaculis. Phasellus quis lobortis neque, mattis viverra augue. Etiam bibendum, sem vel faucibus finibus, ante dui finibus urna, sed gravida nisi lectus ac metus. Sed consequat lacinia nisl. Morbi in arcu risus. Phasellus pulvinar sed odio at scelerisque. Mauris.</p>

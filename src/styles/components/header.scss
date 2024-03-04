@@ -97,6 +97,12 @@ header {
         display: none;
     }
 
+    .mini-menu {
+        button:active, button:hover {
+            background-color: variables.$linear-light-green;
+        }
+    }
+
     .logo-row {
         flex-direction: column;
         text-align: center;

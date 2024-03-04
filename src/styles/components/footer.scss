@@ -173,13 +173,13 @@
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    background-color: variables.$secondary-color-light-gray;
+    background-color: variables.$tertiary-color-white;
 }
 
 .content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.1s ease-out;
 }
 
 .arrow-accordion-footer {
@@ -188,7 +188,7 @@
     border-left: 2px solid variables.$button-main-color-green;
     border-bottom: 2px solid variables.$button-main-color-green;
     transform: rotate(-45deg);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.1s ease-out;
 }
 
 .section-footer.open .arrow-accordion-footer {
@@ -269,6 +269,11 @@
 
         .trigger-footer {
             text-transform: uppercase;
+        }
+
+        .trigger-footer:active, .trigger:hover {
+            background-color: variables.$linear-light-green;
+            color: variables.$tertiary-color-white;
         }
 
         .arrow-accordion-footer {
@@ -430,5 +435,10 @@
 
     .footer-content {
         margin-left: 420px;
+    }
+
+    .trigger-footer:active, .trigger:hover {
+        background-color: variables.$linear-light-green;
+        color: variables.$tertiary-color-white;
     }
 }
