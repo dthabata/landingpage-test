@@ -271,11 +271,6 @@
             text-transform: uppercase;
         }
 
-        .trigger-footer:active, .trigger:hover {
-            background-color: variables.$linear-light-green;
-            color: variables.$tertiary-color-white;
-        }
-
         .arrow-accordion-footer {
             width: 6px;
             height: 6px;
@@ -436,9 +431,12 @@
     .footer-content {
         margin-left: 420px;
     }
+}
 
-    .trigger-footer:active, .trigger:hover {
-        background-color: variables.$linear-light-green;
-        color: variables.$tertiary-color-white;
+@include mixins.only-device("tablet") { 
+    .contact {
+        img {
+            background: fixed;
+        }
     }
 }

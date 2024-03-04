@@ -16,7 +16,6 @@ const Accordion = () => {
                 return;
             }
         });
-
         setReasonsList(reasonsListAux);
     }
 
@@ -31,7 +30,6 @@ const Accordion = () => {
                 setReasonsList(reasonsListAux);
             }
         }
-    
         fetchMyAPI()
     })
 
