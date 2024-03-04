@@ -1,3 +1,5 @@
+@use '../mixins.scss' as mixins;
+
 .footer-web {
     position: relative;
     background-image: url('../../assets/woman.png');
@@ -31,13 +33,7 @@
     flex-direction: row;
     align-items: flex-start;
     text-align: center;
-    padding: 50px;
-    gap: 250px;
-
-    h1 {
-        width: 60%;
-        margin-left: 180px;
-    }
+    padding: 26px;
 }
 
 .footer-title {
@@ -54,14 +50,7 @@
         font-weight: 700;
         color: #3b454f;
     }
-
-    & span {
-        font-weight: 700;
-        color: #83af38;
-        font-size: 26px;
-    }
 }
-
 .button-contact {
     margin-top: 20px;
     display: flex;
@@ -102,14 +91,6 @@
     color: #3b454f;
     text-align: right;
     margin-right: 20px;
-}
-
-.desktop-elements {
-    display: block;
-}
-
-.mobile-elements {
-    display: none;
 }
 
 .colorful-block {
@@ -230,5 +211,227 @@
     
     img {
         margin-bottom: -8px;
+    }
+}
+
+
+
+@include mixins.between-devices("phone", "tablet") { 
+    
+    .baseboard {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        margin-bottom: -20px;
+        background-color: #fff;
+
+        .button-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .button-wpp {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .button-contact {
+            .phone-mobile {
+                width: 10px;
+                margin-right: 5px;
+            }
+
+            .mail {
+                margin-right: 5px;
+            }
+        }
+
+        .accordion-content, .accordion {
+            margin-top: 5px;
+            width: 95%;
+            background-color: #fff;
+        }
+
+        .trigger, .content {
+            color: #435162;
+            background-color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+
+        .trigger {
+            text-transform: uppercase;
+        }
+
+        .arrow-accordion {
+            width: 6px;
+            height: 6px;
+            border-left: 2px solid #435162;
+            border-bottom: 2px solid #435162;
+            transform: rotate(-45deg);
+            transition: transform 0.3s ease-out;
+        }
+
+        .section {
+            border-bottom: 1px solid #435162;
+        }
+        
+        .section:first-child {
+            border-top: 1px solid #435162;
+        }
+    }
+
+    .payments {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        background-color: #fff;
+        gap: 0;
+
+        h3, p {
+            padding-left: 20px;
+            margin-bottom: -10px;
+            color: #435162;
+        }
+
+        h3 {
+            margin-top: -10px;
+        }
+
+        p:last-child {
+            margin-bottom: 100px;
+        }
+
+        .flags-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 0;
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-bottom: -10px;
+        }
+
+        .payment-container {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-bottom: -10px;
+        }
+
+        .discount {
+            margin-top: 5px;
+        }
+
+        .bank-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: -10px;
+        }
+
+        .bank {
+            img {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+
+        .pix {
+            img {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+
+        .mobile-memo {
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center;
+
+            p {
+                margin-right: 10px;
+            }
+
+            img {
+                margin: 40px;
+            }
+        }
+    }
+    
+    .lp-footer {
+        display: flex;
+        flex-direction: column;
+
+        .footer-title {
+            font-size: 20px;
+            min-width: 100%;
+            margin-bottom: -70px;
+            margin-top: -30px;
+        }
+
+        .footer-content p {
+            font-size: 12px;
+            font-weight: 300;
+            color: #737d86;
+            margin-bottom: 0px;
+        }
+
+        .footer-content span {
+            font-size: 14px;
+            font-weight: 700;
+            color: #83af38;
+            margin-bottom: 0px;
+        }
+
+        .add-info {
+            font-size: 10px;
+            font-weight: 300;
+            color: #3b454f;
+        }
+
+        .button-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 120%;
+        }
+
+        .button-wpp {
+            font-size: 12px;
+            margin-top: 340px;
+            margin-right: 105px;
+        }
+    }
+}
+
+@include mixins.between-devices("desktop", "large-desktop") { 
+    .lp-footer {
+        flex-direction: column;
+    }
+
+    .footer-title {
+        margin-left: 340px;
+        margin-bottom: 140px;
+    }
+
+    .footer-content {
+        margin-left: 420px;
     }
 }
