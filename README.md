@@ -1,12 +1,12 @@
-# Projeto Teste Amo Promo
+## Projeto Teste Amo Promo
 
-Este projeto foi feito com o intuito de atender aos requisitos do ![Teste Pessoa Desenvolvedora Web Amo Promo V1.0](https://gist.github.com/vitorfavila/1d49f3f43ad97068b601dd75488c49cd)!
+Este projeto foi feito com o intuito de atender aos requisitos do [Teste Pessoa Desenvolvedora Web Amo Promo V1.0](https://gist.github.com/vitorfavila/1d49f3f43ad97068b601dd75488c49cd)!
 
-## 🚀 Para começar
+### 🚀 Para começar
 
 Clone o projeto em sua máquina e rode `npm install` para instalar as dependências do projeto. Isso feito, basta dar `npm start` para ver a landing page em sua tela!
 
-### 📋 Pré-requisitos do teste
+#### 📋 Pré-requisitos do teste
 
 - Implementar uma Landin Page utilizando HTML, CSS e se necessário Javascript com base no Figma compartilhado;
 - Melhores práticas de código, limpo, semântico, fácil de ler;
@@ -16,13 +16,13 @@ Clone o projeto em sua máquina e rode `npm install` para instalar as dependênc
 - Carregar dados da section de Accordion com base no endpoint enviado;
 - Disponibilizar link do repositório do projeto ao fim do mesmo.
 
-### 🖇️ Diferenciais
+#### 💡 Diferenciais
 
 - Uso do React;
 - Layout adaptativo para mobile;
 - Uso do SASS.
 
-## 🛠️ Como foi construído
+#### 🛠️ Como foi construído
 
 - HTML/CSS;
 - O React foi utilizado por meio de componentes funcionais no projeto e fez uso de `hooks`, tais como hooks como `useState` e `useEffect`;
@@ -31,11 +31,11 @@ Clone o projeto em sua máquina e rode `npm install` para instalar as dependênc
 - A adaptação mobile foi feita, mas se com mais tempo disponível, teria sido aprimorada em ajustes mais finos;
 - Não foi utilizada nenhum framework CSS além do que era mínimo necessário para rodar SASS;
 
-## ✒️ Observação
+#### ✒️ Observação
 
 Alguns comentários foram deixados de propósito para a leitura do avaliador do teste, com referências de sites que foram utilizados em pesquisa para o desenvolvimento da landing page.
 
-## 📄 Algumas imagens do projeto desenvolvido, em sua versão de envio final
+#### 📄 Algumas imagens do projeto desenvolvido, em sua versão de envio final
 
 ![alt text](http://url/to/img.png)
 ![alt text](http://url/to/img.png)
@@ -43,4 +43,5 @@ Alguns comentários foram deixados de propósito para a leitura do avaliador do 
 ![alt text](http://url/to/img.png)
 
 ---
-⌨️ feito por [@dornelasthabata](https://github.com/dthabata) 😊
+
+// feito por [@dornelasthabata](https://github.com/dthabata) 😊
