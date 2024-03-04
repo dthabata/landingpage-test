@@ -16,7 +16,7 @@
   }
 }
 
-@include mixins.between-devices("phone", "tablet") {
+@include mixins.between-devices("tiny-phone", "tablet") {
   .desktop-elements {
     display:none !important;
   }

@@ -76,7 +76,7 @@
 
 
 
-@include mixins.between-devices("phone", "tablet") {
+@include mixins.between-devices("tiny-phone", "tablet") {
     .flex-container-cards {
         flex-direction: column;
         gap: 0px;

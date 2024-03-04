@@ -71,7 +71,7 @@ section {
     margin-left: 30px;
 }
 
-@include mixins.between-devices("phone", "tablet") { 
+@include mixins.between-devices("tiny-phone", "tablet") { 
     .home-chunk, .coverage-chunk, .accordion-chunk {
         width: 100%;
     }

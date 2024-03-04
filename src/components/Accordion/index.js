@@ -28,7 +28,6 @@ const Accordion = () => {
                 response.forEach(reason => {
                     reasonsListAux.push({value: reason, show: false });
                 });
-                console.log(reasonsListAux);
                 setReasonsList(reasonsListAux);
             }
         }

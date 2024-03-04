@@ -1,5 +1,9 @@
 @use '../mixins.scss' as mixins;
 
+
+
+
+
 header {
     background-color: #333;
     color: #fff;
@@ -92,7 +96,12 @@ header {
 }
 
 
-@include mixins.between-devices("phone", "tablet") { 
+@include mixins.between-devices("tiny-phone", "tablet") { 
+    .header-text{
+        display: none;
+    }
+
+
     .logo-row {
         flex-direction: column;
         text-align: center;
@@ -110,6 +119,12 @@ header {
             }
         }
     }
+}
+
+
+@include mixins.only-device("tablet") { 
+    
+    
 }
 
 @include mixins.between-devices("desktop", "large-desktop") { 
