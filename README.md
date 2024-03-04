@@ -39,17 +39,29 @@ Alguns comentários foram deixados de propósito para a leitura do avaliador do 
 #### 💻 Prints do projeto desenvolvido
 
 // Web
-![Print 1]("../../src/assets/lp1")
+- ![Print 1](https://i.ibb.co/HtPSRRm/lp1.png)
 
-![Print 2]("../../src/assets/lp2")
+- ![Print 2](https://i.ibb.co/Jj4Z91R/lp2.png)
 
-![Print 3]("../../src/assets/lp3")
+- ![Print 3](https://i.ibb.co/VDGChPb/lp3.png)
 
-![Print 4]("../../src/assets/lp4")
+- ![Print 4](https://i.ibb.co/4f9hMmZ/lp4.png)
 
-![Print 5]("../../src/assets/lp5")
+- ![Print 5](https://i.ibb.co/wdZvcmp/lp5.png)
 
 //Mobile
+- ![Print 1](https://i.ibb.co/7NwbL1s/mb1.png)
 
+- ![Print 2](https://i.ibb.co/nBfBHVw/mb2.png)
+
+- ![Print 3](https://i.ibb.co/R2MnHNj/mb3.png)
+
+- ![Print 4](https://i.ibb.co/Mft8Vm5/mb4.png)
+
+- ![Print 5](https://i.ibb.co/2yBHgGr/mb5.png)
+
+- ![Print 6](https://i.ibb.co/Y7tMfJD/mb6.png)
+
+- ![Print 7](https://i.ibb.co/z4XFXpc/mb7.png)
 
 -- feito por @[dornelasthabata](https://github.com/dthabata) 😊
