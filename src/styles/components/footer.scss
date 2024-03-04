@@ -167,7 +167,7 @@
     text-align: left;
 }
 
-.trigger {
+.trigger-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,18 +260,18 @@
             background-color: variables.$tertiary-color-white;
         }
 
-        .trigger, .content {
+        .trigger-footer, .content {
             color: variables.$text-secondary-color-gray;
             background-color: variables.$tertiary-color-white;
             font-family: variables.$secondary-font-family;
             font-weight: 600;
         }
 
-        .trigger {
+        .trigger-footer {
             text-transform: uppercase;
         }
 
-        .arrow-accordion {
+        .arrow-accordion-footer {
             width: 6px;
             height: 6px;
             border-left: 2px solid variables.$text-secondary-color-gray;
@@ -414,7 +414,6 @@
         .button-wpp {
             font-size: variables.$tiny-font-size;
             margin-top: 340px;
-            margin-right: 105px;
         }
     }
 }

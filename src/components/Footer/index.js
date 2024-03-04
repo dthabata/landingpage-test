@@ -94,12 +94,12 @@ return (
                             <a href="#" className="button-wpp">Central de Ajuda</a>
                             <a href="#" className="button-wpp"><img src={mailImg} alt="Mail" className="mail" />atendimento@segurosp</a>
                         </div>
-                        <div className="accordion-content">
-                            <div className="accordion">
-                                <div className="section">
-                                    <div className="trigger">
+                        <div className="accordion-content-footer">
+                            <div className="accordion-footer">
+                                <div className="section-footer">
+                                    <div className="trigger-footer">
                                         Seguros
-                                        <div className="arrow-accordion"></div>
+                                        <div className="arrow-accordion-footer"></div>
                                     </div>
                                     <div className="content">
                                         <p>Seguro Viagem América do Norte</p>
