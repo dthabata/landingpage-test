@@ -35,13 +35,8 @@ Clone o projeto em sua máquina e rode `npm install` para instalar as dependênc
 
 Alguns comentários foram deixados de propósito para a leitura do avaliador do teste, com referências de sites que foram utilizados em pesquisa para o desenvolvimento da landing page.
 
-#### 📄 Algumas imagens do projeto desenvolvido, em sua versão de envio final
-
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+#### 💻 Vídeos do projeto desenvolvido
 
 ---
 
-// feito por [@dornelasthabata](https://github.com/dthabata) 😊
+feito por @[@dornelasthabata](https://github.com/dthabata) 😊
