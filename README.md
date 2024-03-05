@@ -30,7 +30,7 @@ Isso feito, basta dar `npm start` para ver a landing page em sua tela!
 - Houve a aplicação de SASS como sugerido;
 - A chamada de API foi feita na mão por fetch, para seguir recomendação de utilizar o mínimo possível de libs, uma vez que em outra situação geralmente teria feito a escolha de uso de `axios`, por exemplo;
 - A adaptação responsiva mobile foi feita;
-- Não foi utilizada nenhum framework CSS além do que era mínimo necessário para rodar SASS;
+- Não foi utilizada nenhum framework CSS além do mínimo necessário para rodar SASS.
 
 #### ✒️ Observação
 
