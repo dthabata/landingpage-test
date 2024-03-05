@@ -38,7 +38,6 @@ Alguns comentários foram deixados de propósito para a leitura do avaliador do 
 
 #### 💻 Prints do projeto desenvolvido
 
-// Web
 ![Print 1](https://i.ibb.co/HtPSRRm/lp1.png)
 
 ![Print 2](https://i.ibb.co/Jj4Z91R/lp2.png)
@@ -49,7 +48,6 @@ Alguns comentários foram deixados de propósito para a leitura do avaliador do 
 
 ![Print 5](https://i.ibb.co/wdZvcmp/lp5.png)
 
-//Mobile
 ![Print 1](https://i.ibb.co/7NwbL1s/mb1.png)
 
 ![Print 2](https://i.ibb.co/nBfBHVw/mb2.png)
